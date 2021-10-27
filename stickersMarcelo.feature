@@ -32,4 +32,7 @@ Entao aviso sobre a falta de conexao deve aparecer
 
 ###############################################################################
 
+# cucumber -p <variavel do cucumber yml> - para rodar em prod ou homolog
+# cucumber --format html --out=relatorio.html - para gerar relatorio em html
+
 

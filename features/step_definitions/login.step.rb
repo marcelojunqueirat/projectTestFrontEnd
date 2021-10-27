@@ -1,13 +1,11 @@
 Dado('que o usuario queira se logar') do
-    visit ''
-    sleep 5
+    login.load
 end
 
 Quando('ele digitar as credenciais validas') do
-    @test = LoginPage.new
-    @test.userLogin
+   login.userLogin(CREDENTIAL[:userOne][:email], CREDENTIAL[:userOne][:password])
 end
 
 Entao('deve acessar o site com sucesso') do
-
+    home.checkLoginSucessful
 end
